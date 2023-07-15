@@ -1,0 +1,402 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	/*background-color: black;
+	color: white;*/
+}
+
+h1,h2,h3 {
+	font-family: 'Inter', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Zilla Slab', serif;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Arvo', serif;
+	font-family: 'Zen Dots', cursive;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*NAVIGACIJA*/
+
+.bg-light {
+	background-color: #fff!important;
+}
+
+#navbarNav {
+	justify-content: flex-end;
+}
+
+.navbar-brand {
+	color: red!important;
+	font-size: 30px!important;
+}
+
+/*.container-fluid {
+    padding-right: var(--bs-gutter-x,2.5%);
+    padding-left: var(--bs-gutter-x,2.5%);
+}*/
+
+.container-fluid {
+    padding-right: var(--bs-gutter-x,5%);
+    padding-left: var(--bs-gutter-x,5%);
+}
+
+/*HAMBURGERIO SPALVOS KEITIMAS*/
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,163,226, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0,163,226);
+} 
+
+/*KONTEINERIS*/
+
+/*.mycontainer {
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}*/
+
+.mycontainer {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.pl-5 {
+	padding-left: 5%;
+} 
+
+.pd-5 {
+	padding-right: 5%;
+}
+/*UŽRAŠAS*/
+
+.home-title {
+	font-size: 100px;
+	font-weight: 800;
+	margin-top: 200px;
+	color: #000; /*šitas, kad pakeisti/kontroliuoti spalvą*/
+}
+
+.home-title span {
+	color: #818181; /*jei vardo nenorite spalvoto, spano naudoti nereikia*/
+}
+
+.home-content p {
+	font-size: 28px;
+	font-weight: 300;
+	color: #b7b7b7;
+	margin-top: 40px;
+}
+.home-content p span {
+	color: #000;
+	font-weight: 900;
+}
+
+.home .home-content {
+	margin-bottom: 120px;
+}
+
+/*PROJEKTŲ GRIDAS*/
+
+.item {
+	margin-bottom: 1.5rem;
+}
+
+.item .item-wrap {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.item .item-wrap:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.4); 
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2;
+
+}
+
+.item .item-wrap:hover:after {
+	opacity: 1;
+	visibility: visible;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.item .item-wrap .work-info {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-50%);
+	transition: .3s all ease;
+	margin-top: 20px;
+	padding-right: 50px;
+	padding-left: 50px; 
+}
+
+.item .item-wrap:hover .work-info {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 0;
+}
+
+.item .item-wrap img {
+	transform: scale(1);
+	transition: .3s transform ease;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.item .item-wrap:hover img {
+	transform: scale(1.05);
+}
+
+.grid {
+	margin-top: 70px;
+}
+
+/*FOOTERIS*/
+
+a.back {
+	text-decoration: none;
+	color: grey;
+}
+
+
+/*PROJEKTAI*/
+
+.project .hero-image img {
+	width: 100%;
+	margin-top: 60px; 
+}
+
+.project .infoproject {
+	width: 100%;
+	margin-left: -30px;
+}
+
+.project .infoproject li {
+	list-style: none;
+	float: left;
+	margin-right: 35px;
+	font-weight: 400; 
+}
+
+.project .infoproject li span {
+	font-weight: 900;
+}
+
+.project .project-title {
+	font-size: 32px;
+	font-weight: 300;
+	line-height: 56px;
+}
+
+.project p {
+	line-height: 30px;
+	color: grey;
+}
+
+.project-lightbox p {
+	line-height: 30px;
+}
+
+.number {
+	font-size: 46px;
+	color: #E9E9E9;
+	font-weight: 700;
+	margin-right: 8px;
+}
+
+.project-video iframe {
+	width: 100%;
+	min-height: 750px;
+}
+
+
+/*ABOUT*/
+
+.about-text .subtitle {
+	letter-spacing: -1px;
+	font-size: 26px;
+}
+
+.about-text p {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 90px;
+}
+
+.progress .progress-bar {
+	background: grey;
+}
+
+.progress {
+	border-radius: 16px;
+}
+
+/*.progress {
+	background-color: blue;
+}*/
+
+p.nopad {
+	margin-bottom: 2px;
+}
+
+.exp-title h3 {
+	margin-bottom: 28px;
+}
+
+.btn {
+	border-radius: 0;
+	padding: 12px 26px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+} 
+
+
+.btn-outline-secondary:hover {
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+
+/*KONTAKTAI*/
+
+input.info {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 12px 15px;
+	border: solid 1px #212121;
+	border-radius: 25px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+textarea.message {
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 12px 15px;
+	border: solid 1px #212121;
+	border-radius: 25px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+a.email {
+	text-decoration: none;
+	color: #212529;
+}
+
+a.email:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+.fa {
+	margin-right: 15px;
+	color: grey;
+	font-size: 18px;
+}
+
+.fa:hover {
+	color: green;
+}
+
+
+/*SPACINGS*/
+
+.top_90 {
+	margin-top: 90px;
+}
+
+.top_40 {
+	margin-top: 40px;
+}
+
+/*Spalvų keitimas navui*/
+
+/*.navbar-light .navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: yellow;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}*/
+
+/*.dist {
+	margin-top: 1rem;
+}*/
+
+
+/*JUODAI BALTA NUOTRAUKA*/
+
+/*img {
+	-webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+img:hover {
+	filter: grayscale(0%);
+}*/
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/flyhero.jpg");
+
+  /* Set a specific height */
+  min-height: 750px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  /*background-image: url("../img/marius.jpg");*/
+
+  /* Set a specific height */
+  min-height: 750px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
